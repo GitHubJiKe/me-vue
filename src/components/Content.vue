@@ -1,22 +1,29 @@
 <template>
-  <div class="me-content">
+  <div class="me-content" :style="`width:${contentWidth};left:${contentLeft}`">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Content'
+  name: 'Content',
+  props: {
+    contentLeft: {
+      type: String,
+      default: '17%'
+    },
+    contentWidth: {
+      type: String,
+      default: '80%'
+    }
+  }
 }
 </script>
 <style scoped>
   .me-content{
-    position: absolute;
-    width: 100%;
-    left:200px;
-    top:60px;
+    position: relative;
     height:auto;
-    background-color: violet;
-    overflow: auto;
+    background-color: #ffffff;
+    overflow-x: scroll;
   }
 </style>

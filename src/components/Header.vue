@@ -1,10 +1,21 @@
 <template>
-  <header class="me-header">Header</header>
+  <header class="me-header">
+    <i class="fas fa-align-justify"
+     style="width:40px;height:40px;position:absolute;left:40px;top:15px;"
+     @click="toggleMenu()"></i>
+     <label style="position:absolute;left:80px;top:-2px;" @click="toggleMenu()">Me</label>
+  </header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    toggleMenu: {
+      type: Function,
+      required: true
+    }
+  }
 }
 </script>
 

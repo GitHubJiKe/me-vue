@@ -1,72 +1,40 @@
 <template>
-  <div>
-    <Header></Header>
-    <Menu></Menu>
-    <Content>
+  <Row>
+    <Column >
       <img src="../assets/logo.png">
+    </Column>
+    <Column >
       <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-      <img src="../assets/logo.png">
-    </Content>
-    <Footer></Footer>
-  </div>
+    </Column>
+    <Column >
+      <Select>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+        <option>Item1</option>
+      </Select>
+    </Column>
+  </Row>
 </template>
 
 <script>
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
-import Menu from '@/components/Menu.vue'
-import Content from '@/components/Content.vue'
+import Row from '@/components/Row.vue'
+import Column from '@/components/Column.vue'
+import Select from '@/components/Select.vue'
 export default {
   name: 'HomePage',
   components: {
-    Footer,
-    Header,
-    Menu,
-    Content
+    Row,
+    Column,
+    Select
   }
 }
 </script>
 
 <style scoped>
-
 </style>
