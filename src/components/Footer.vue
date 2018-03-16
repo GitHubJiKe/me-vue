@@ -2,7 +2,7 @@
   <footer class="me-footer">
     <Row>
       <Column gravity="-2"></Column>
-      <Column>by Peter Yuan</Column>
+      <Column>by Peter Yuan @{{currentYear}}</Column>
       <Column gravity="-2">
         <Select :change="switchLanguage">
           <option value="zh">中文</option>
@@ -17,6 +17,7 @@
 import Row from '@/components/Row.vue'
 import Column from '@/components/Column.vue'
 import Select from '@/components/Select.vue'
+import moment from 'moment'
 export default {
   name: 'Footer',
   components: {
@@ -27,6 +28,11 @@ export default {
   methods: {
     switchLanguage: function (e) {
       this.$store.dispatch('switchLanguage', e.target.value)
+    }
+  },
+  computed: {
+    currentYear: function () {
+      return moment().format('YYYY')
     }
   }
 }

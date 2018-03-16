@@ -14,3 +14,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  select{
+    background-color: white;
+  }
+</style>

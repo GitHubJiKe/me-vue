@@ -3,7 +3,7 @@ const app = {
     {
       title: 'INFORMATION',
       id: 1,
-      pageKey: 'home'
+      pageKey: '/'
     },
     {
       title: 'EDUCATION',

@@ -1,25 +1,107 @@
 <template>
-  <Row>
-    <Column >
-      <img src="../assets/logo.png">
-    </Column>
-    <Column >
-      <img src="../assets/logo.png">
-    </Column>
-    <Column >
-      <Select>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-        <option>Item1</option>
-      </Select>
-    </Column>
-  </Row>
+  <div class="rounded border border-info" style="padding:30px;margin-top:40px;">
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <p class="divider-line"></p>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <p class="divider-line"></p>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+    <Row>
+      <Column>
+        <label class="info-label">Name: </label><label>Peter Yuan</label>
+      </Column>
+      <Column>
+        <label class="info-label">Sex: </label><label>Male</label>
+      </Column>
+      <Column>
+        <label class="info-label">Age: </label><label>25</label>
+      </Column>
+    </Row>
+  </div>
 </template>
 
 <script>
@@ -37,4 +119,14 @@ export default {
 </script>
 
 <style scoped>
+.info-label{
+  padding-right: 10px;
+}
+.divider-line{
+  width: 100%;
+  height: 0.5px;
+  background-color: grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 </style>
