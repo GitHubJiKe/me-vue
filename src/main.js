@@ -6,6 +6,9 @@ import router from './router'
 import store from './store'
 import './styles/app.css'
 import $ from 'jquery'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 window.$ = $
 /* eslint-disable no-new */
