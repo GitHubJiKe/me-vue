@@ -1,6 +1,12 @@
 <template>
   <div class="me-menu" :style="`width:${menuWidth}`">
-    <span class="me-menu-item" v-for="m in menus" :key="m.pageKey" :id="m.pageKey" @click="gotoPage(m.pageKey)">{{languageMap[m.title][languageType]}}</span>
+    <span :class="`me-menu-item ${curPath === m.pageKey ? 'actived' :''}`"
+      v-for="m in menus"
+      :key="m.pageKey"
+     :id="m.pageKey"
+     @click="gotoPage(m.pageKey)">
+     {{languageMap[m.title][languageType]}}
+     </span>
   </div>
 </template>
 
@@ -28,9 +34,6 @@ export default {
   },
   methods: {
     gotoPage: function (path) {
-      let _id = '#' + path
-      window.$(_id).css({'background-color': 'brown', 'color': 'white'})
-      window.$(_id).siblings().css({'color': 'black', 'background-color': '#f2f2f2'})
       router.push({path})
     }
   },
@@ -40,6 +43,9 @@ export default {
     },
     languageType: function () {
       return this.$store.state.app.languageType
+    },
+    curPath: function () {
+      return this.$route.path.split('/')[1]
     }
   }
 }
