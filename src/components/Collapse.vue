@@ -17,10 +17,11 @@ export default {
     title: {
       type: String,
       default: ''
-    },
-    show: {
-      type: String,
-      default: ''
+    }
+  },
+  data () {
+    return {
+      show: ''
     }
   },
   methods: {
