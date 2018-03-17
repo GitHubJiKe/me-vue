@@ -1,6 +1,6 @@
 <template>
   <div class="me-menu" :style="`width:${menuWidth}`">
-    <span class="me-menu-item" v-for="m in menus" :key="m.id" @click="gotoPage(m.pageKey)">{{languageMap[m.title][languageType]}}</span>
+    <span class="me-menu-item" v-for="m in menus" :key="m.pageKey" :id="m.pageKey" @click="gotoPage(m.pageKey)">{{languageMap[m.title][languageType]}}</span>
   </div>
 </template>
 
@@ -8,6 +8,14 @@
 import router from '../router'
 export default {
   name: 'Menu',
+  data () {
+    return {
+      style: {
+        'backgroundColor': '',
+        'color': ''
+      }
+    }
+  },
   props: {
     menus: {
       type: Array,
@@ -20,6 +28,9 @@ export default {
   },
   methods: {
     gotoPage: function (path) {
+      let _id = '#' + path
+      window.$(_id).css({'background-color': 'brown', 'color': 'white'})
+      window.$(_id).siblings().css({'color': 'black', 'background-color': '#f2f2f2'})
       router.push({path})
     }
   },
@@ -54,6 +65,10 @@ export default {
   cursor: pointer;
   color: black;
   font-weight: bolder;
+}
+.actived {
+  background-color: brown;
+  color: white;
 }
 .me-menu-item:hover{
   background-color: brown;

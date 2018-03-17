@@ -1,6 +1,6 @@
 import HomePage from '@/pages/HomePage'
 export default {
-  path: '/',
+  path: '/home',
   name: 'HomePage',
   component: HomePage
 }
