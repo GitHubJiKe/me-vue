@@ -5,7 +5,7 @@
     <Content :contentLeft="contentLeft" :contentWidth="contentWidth">
       <router-view/>
     </Content>
-    <Footer></Footer>
+    <Footer v-if="this.$store.state.app.showHeaderAndFooter"></Footer>
   </div>
 </template>
 

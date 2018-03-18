@@ -6,6 +6,8 @@ import AbilityPage from './ability'
 import IndexPage from '@/pages/IndexPage'
 import WorkPage from './work'
 import ShowWorksPage from './works'
+import CommentPage from './comment'
+import OthersPage from './others'
 Vue.use(Router)
 const Index = {
   path: '/',
@@ -14,7 +16,8 @@ const Index = {
 }
 const routes = [
   Index, HomePage, EducationPage,
-  WorkPage, AbilityPage, ShowWorksPage
+  WorkPage, AbilityPage, ShowWorksPage,
+  OthersPage, CommentPage
 ]
 export default new Router({
   routes,

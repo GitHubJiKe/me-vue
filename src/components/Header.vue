@@ -1,12 +1,12 @@
 <template>
   <header class="me-header">
     <i class="fas fa-align-justify"
-     style="width:40px;height:40px;position:absolute;left:40px;top:15px;"
+     style="width:40px;height:40px;position:absolute;left:40px;top:15px;cursor:pointer;"
      @click="toggleMenu()"></i>
      <label style="position:absolute;left:80px;top:-2px;" @click="toggleMenu()">Me</label>
-     <i :class="`fas fa-music ${rotate?'stopRotate':'startRotate'}`"
+     <i :class="`fas fa-music ${rotate?'startRotate':'stopRotate'}`"
       @click="playMusic"></i>
-     <audio :src="piano" autoplay ref="audio"></audio>
+     <audio :src="piano" ref="audio"></audio>
   </header>
 </template>
 
@@ -28,12 +28,12 @@ export default {
   },
   methods: {
     playMusic: function () {
-      this.rotate = !this.rotate
       if (this.rotate) {
         this.$refs.audio.pause()
       } else {
         this.$refs.audio.play()
       }
+      this.rotate = !this.rotate
     }
   }
 }
@@ -62,6 +62,7 @@ export default {
   height:35px;
   padding-top: 2px;
   padding-right: 2px;
+  cursor:pointer;
   }
 @-webkit-keyframes _rotate_ {
   0%{
@@ -87,6 +88,7 @@ export default {
   height:35px;
   padding-top: 2px;
   padding-right: 2px;
+  cursor:pointer;
 }
 
 </style>

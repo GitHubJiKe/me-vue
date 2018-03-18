@@ -31,9 +31,15 @@ const app = {
       title: 'OTHERS',
       id: 6,
       pageKey: 'others'
+    },
+    {
+      title: 'COMMENTS',
+      id: 7,
+      pageKey: 'comments'
     }
   ],
-  languageType: 'zh'
+  languageType: 'zh',
+  showHeaderAndFooter: true
 }
 const languageMap = {
   INFORMATION: {
@@ -95,6 +101,10 @@ const languageMap = {
   WORKCONTENT: {
     zh: '工作内容',
     en: 'Work Content'
+  },
+  COMMENTS: {
+    zh: '评论区',
+    en: 'Comments'
   }
 }
 const basicInfo = {
@@ -248,11 +258,13 @@ const works = [
     }
   }
 ]
+const comments = []
 export default {
   app,
   languageMap,
   basicInfo,
   educationInfo,
   workExperience,
-  works
+  works,
+  comments
 }
